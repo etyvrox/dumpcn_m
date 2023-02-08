@@ -14,12 +14,6 @@ $ time ./dumpcn -t=100 < opendns-top-domains.txt > /dev/null
 ./dumpcn -t=100 < opendns-top-domains.txt > /dev/null  1,66s user 1,24s system 39% cpu 7,311 total
 ```
 
-## Installation
-
-```
-$ go get -u github.com/samirettali/dumpcn
-```
-
 ## Usage
 
 ```
