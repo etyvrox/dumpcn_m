@@ -54,7 +54,7 @@ func worker(jobChan <-chan string, resChan chan<- string, wg *sync.WaitGroup, in
 					resChan <- string(name)
 				}
 			}
-			resChan <- resp.TLS.PeerCertificates[0].Subject.CommonName
+			resChan <- job + ": " + resp.TLS.PeerCertificates[0].Subject.CommonName
 		}
 	}
 
